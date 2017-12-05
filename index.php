@@ -30,7 +30,7 @@ session_start();
 
 
 
-<form name="form" action="mpdf/pdfTwelve/index.php" method="post" >
+<form name="form" action="pdfGenerator/index.php" method="post" >
     <table style="margin:auto; margin-top:10%;">
         <tr>
             <td><label>First Name:</label></td>

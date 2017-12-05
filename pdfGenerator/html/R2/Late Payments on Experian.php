@@ -47,12 +47,17 @@
             padding-left: 1%;
             font-size: .75 em;
             font-weight: normal;
-            letter-spacing:2px;
+            line-height: 25px;
+            letter-spacing: 2px;
         }
 
         .tableInfo p {
             padding-left: 1.5%;
             font-weight: bold;
+        }
+
+        .compactAddress {
+            line-height: 5px;
         }
 
         div.tableReturnReceipt {
@@ -64,7 +69,7 @@
             font-weight: normal;
             padding-top: 3%;
             padding-left: 1%;
-            letter-spacing: 2px;
+            letter-spacing:2px;
         }
 
         .tableReturnReceipt p {
@@ -118,10 +123,10 @@
 <div class="container .fontDescription">
         <div class="pageFirstHalf">
             <div class="tableInfo" >
-                <p><span><?=$firstname?></span>  <span><?=$lastname?></span></p>
-                <p><?=$streetAddress?></p>
-                <p><?=$city. ',' .$state. ',' .$zip;?></p>
-                <p><?=$telephone?></p>
+                <p class="compactAddress"><span><?=$firstname?></span>  <span><?=$lastname?></span></p>
+                <p class="compactAddress"><?=$streetAddress?></p>
+                <p class="compactAddress"><?=$city. ',' .$state. ',' .$zip;?></p>
+                <p class="compactAddress"><?=$telephone?></p>
                 <br>
                 <br>
                 <p><?=$socialNumber?></p>
@@ -142,10 +147,10 @@
             <div class="tableDemandRequest">
 
                 <p class="bold receiptDemand">DEMAND REQUEST FOR</p>
-                <p>TransUnion Consumer Relations</p>
-                <p>P.O. Box 2000</p>
-                <p>Chester, PA.</p>
-                <p>19022-2000</p>
+                <p>Experian / NCAC</p>
+                <p>P.O. Box 9701</p>
+                <p>Allen, TX.</p>
+                <p>75013-9701</p>
                     
             </div>
         </div>

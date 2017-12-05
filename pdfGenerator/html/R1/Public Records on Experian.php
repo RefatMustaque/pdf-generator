@@ -34,7 +34,7 @@
         }
 
         div.pageFirstHalf {
-            height: 48%;
+            height: 40%;
         }
         
         div.tableInfo {
@@ -42,18 +42,22 @@
             height: 40%;
             float: left;
            /* background-color: blue;*/
-            border-right: 2px solid #000000;
+            border-right: 2px solid black;
             padding-top: 1%;
             padding-left: 1%;
             font-size: .75 em;
             font-weight: normal;
-            line-height: 25px;
-            letter-spacing: 2px;
+            line-height: 20px;
+			letter-spacing:2px;
         }
 
         .tableInfo p {
             padding-left: 1.5%;
             font-weight: bold;
+        }
+
+        .compactAddress {
+            line-height: 5px;
         }
 
         div.tableReturnReceipt {
@@ -65,7 +69,7 @@
             font-weight: normal;
             padding-top: 3%;
             padding-left: 1%;
-            letter-spacing:2px;
+            letter-spacing: 2px;
         }
 
         .tableReturnReceipt p {
@@ -94,13 +98,13 @@
             font-size: .75em;
             font-weight: normal;
             letter-spacing: 2px;
-            line-height: 20px;
+            line-height: 18px;
             
         }
 
         .hr {
-            padding-top:32px;
-            margin-top: 32px;
+            padding-top:22px;
+            margin-top: 22px;
         }
 
         .bold {
@@ -116,13 +120,13 @@
 </head>
 <body>
 
-<div class="container .fontDescription">
+<div class="container">
         <div class="pageFirstHalf">
             <div class="tableInfo" >
-                <p><span><?=$firstname?></span>  <span><?=$lastname?></span></p>
-                <p><?=$streetAddress?></p>
-                <p><?=$city. ',' .$state. ',' .$zip;?></p>
-                <p><?=$telephone?></p>
+                <p class="compactAddress"><span><?=$firstname?></span>  <span><?=$lastname?></span></p>
+                <p class="compactAddress"><?=$streetAddress?></p>
+                <p class="compactAddress"><?=$city. ',' .$state. ',' .$zip;?></p>
+                <p class="compactAddress"><?=$telephone?></p>
                 <br>
                 <br>
                 <p><?=$socialNumber?></p>
@@ -152,29 +156,48 @@
         </div>
 
         <div class="proof">
-            <p style="text-align:center">
-           <span style="padding-bottom:40px;font-weight: bold;line-height:3em; text-align:center; border-bottom:2px solid black">DEMAND REQUEST OF PROOF OF WRITTEN REQUEST</span></p>
+            <p style="text-align:center; margin-top:35px; margin-bottom:40px;">
+           <span style="padding-bottom:40px;font-weight: bold;line-height:30px; text-align:center; border-bottom:2px solid black;letter-spacing:0.5px">DEMAND REQUEST OF UPDATED REPORT AND SUPPORTING EVIDENCE</span></p>
+  
+            <p>I am exercising my right to have an updated or corrected report along with all supporting evidence sent to me immediately if you wish to continue reporting any of the negative information listed below. This is my legal right and you MUST comply or be in violation of FTC and the FCRA.</p>
 
-           <p style="text-align:center">
-           <span style="padding-bottom:40px;font-weight: bold;line-height:3em; text-align:center; border-bottom:2px solid black">TO ALL CONCERNED PARTIES</span></p>
-            
-            <p>According to section § 607.(b) of the FCRA regarding the "Accuracy of report. Whenever a consumer reporting agency prepares a consumer report it shall follow reasonable procedures to assure maximum possible accuracy of the information concerning the individual about whom the report relates."</p>
+            <p style="margin-bottom:-10px"><span style="padding-bottom:40px;font-weight: normal;line-height:20px; border-bottom:1px solid black;letter-spacing:2px; ">Public Records</span></p>
 
-            <p>However, it appears that you have failed to follow the procedures necessary to assure maximum possible accuracy of my credit report, otherwise the late payments listed below would not be on my credit report.</p>
-
-            <p>Furthermore, and in accordance with section § 609 off the FCRA <span style="padding-bottom:40px; border-bottom:1px solid black">I formally request to be provided proof of the alleged late payments.</span></p>
-
-            <p>Finally, in the event there is no such proof to support the claim that I made any late payment and according to section § 611.(5)(A)(i) you must "promptly delete that item of information from the file of the consumer, or modify that item of information"</p>
-
-            <p>Therefore, I am requesting that you reinvestigate and correctly update and provide proof or positively update the following late payments:</p>
-
-
-            <p style="text-align:center">Continued From Previous Page</p>
+            <p style="margin-top: 0px; padding-top:0px">Please verify and <span style="padding-bottom:40px;font-weight: normal;line-height:25px; border-bottom:1px solid black;letter-spacing:2px;">SEND ME PROOF</span> of the filing date, asset liability, social security number, discharge date, and docket number for the public record listed below or take it off right away. This is seriously harmful to my credit status:</p>
 
             <table>
                 <tr>
-                    <td style=" font-size: .75 em;font-weight: normal;letter-spacing: 2px;line-height: 25px;">Date Inquiry Made By</td>
-                    <td style="padding-left: 200px;font-size: .75 em;font-weight: normal;letter-spacing: 2px;line-height: 25px;">Date</td>
+                    <td style=" font-size: .75 em;font-weight: normal;letter-spacing: 2px;line-height: 25px;">Name</td>
+                    <td style="padding-left: 200px;font-size: .75 em;font-weight: normal;letter-spacing: 2px;line-height: 25px;">Docket Number</td>
+                </tr>
+            </table>
+
+            <hr style="padding-top:0px; margin-top: 0px;">
+
+            <hr class="hr">
+
+            <hr class="hr">
+
+            <hr class="hr">
+
+            <hr class="hr">
+
+            <hr class="hr">
+
+            <p>Thank you for your attention to this matter.</p>
+
+            <p><span>Signature:</span><span style="letter-spacing:0px">___________________________________________</span><span>Date:</span><span style="letter-spacing:0px">_________________________________</span></p>
+
+            <p style="text-align:center">Continued From Previous Page</p>
+
+            <p style="margin-bottom:-10px"><span style="padding-bottom:40px;font-weight: normal;line-height:25px; border-bottom:1px solid black;letter-spacing:2px; ">Additional Public Records</span></p>
+
+            <p style="margin-top: 0px; padding-top:0px">Please verify and <span style="padding-bottom:40px;font-weight: normal;line-height:20px; border-bottom:1px solid black;letter-spacing:2px;">SEND ME PROOF</span> of the filing date, asset liability, social security number, discharge date, and docket number for the public record listed below or take it off right away. This is seriously harmful to my credit status:</p>
+
+            <table>
+                <tr>
+                    <td style=" font-size: .75 em;font-weight: normal;letter-spacing: 2px;line-height: 25px;">Name</td>
+                    <td style="padding-left: 200px;font-size: .75 em;font-weight: normal;letter-spacing: 2px;line-height: 25px;">Docket Number</td>
                 </tr>
             </table>
 
@@ -210,9 +233,9 @@
 
             <hr class="hr">
 
-            <p>Please positively update the above information as quickly as possible.</p>
+            <p>Thank you for your attention to this matter.</p>
 
-            <p style="line-height:40px"><span>Sincerely,</span><br><?=$firstname?> <?=$lastname?></p>
+            <p style="line-height:40px;"><span>Sincerely,</span><br><?=$firstname?> <?=$lastname?></p>
 
             <p style="width:60%; margin-bottom:40px; font-size: .75 em;font-weight: normal;letter-spacing: 2px;line-height: 24px; border-bottom: 1px solid black"> <span>Signature:</span> </p>
 
